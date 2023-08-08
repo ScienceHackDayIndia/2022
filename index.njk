@@ -41,7 +41,7 @@ layout: base.njk
         around the globe and more are being planned which are listed on the Global SHD site.
       </p>
     </div>
-    <iframe width="560" height="315" 
+    <iframe width="560" height="315"
       src="https://www.youtube-nocookie.com/embed/fDTUpymmqVg"
       title="Video showing glimpses from Science Hack Day India 2022" frameborder="0" allowfullscreen></iframe>
   </div>
@@ -133,8 +133,8 @@ layout: base.njk
     {% for item in sponsors %}
       {% if item.type == "organizing" %}
         <li class="sponsor-item">
-          <a href="{{ item.url }}">
-            <img src="{{ item.image }}" alt="{{ item.name }}" />
+          <a href="{{ item.url | url }}">
+            <img src="{{ item.image | url }}" alt="{{ item.name }}" />
           </a>
         </li>
       {% endif %}
@@ -146,7 +146,7 @@ layout: base.njk
       {% if item.type == "community" %}
         <li class="sponsor-item">
           <a href="{{ item.url }}">
-            <img src="{{ item.image }}" alt="{{ item.name }}" />
+            <img src="{{ item.image | url }}" alt="{{ item.name }}" />
           </a>
         </li>
       {% endif %}
